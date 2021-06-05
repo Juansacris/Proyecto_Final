@@ -1,0 +1,12 @@
+[Unit]
+Description=Proyecto Final
+After=multi-user.target
+
+[Service]
+Type=idle
+ExecStart=/usr/bin/python3 /home/pi/Documents/final_1.py
+Restart=on-failure
+RestartSec=5s
+
+[Install]
+WantedBy=multi-user.target
